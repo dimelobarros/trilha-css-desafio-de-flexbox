@@ -4,167 +4,319 @@
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
-h2 {
-  font-weight: 700;
-  font-size: 2rem;
-  color: #33a8db;
-  letter-spacing: 0.25rem;
-  text-transform: uppercase;
-  margin-bottom: 1.5rem;
+h3 {
+  margin-top: 20px;
 }
 
-p {
-  font-size: 1rem;
-  color: #ffffff;
+.container {
+  display: flex;
+  width: 650px;
+  row-gap: 10px;
+  column-gap: 10px;
 }
 
-section {
-  margin: 100px auto;
+/* item */
+.item {
+  background: orange;
+  margin: 10px;
 }
-
-.banner {
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(49, 168, 221, 0.2),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url("../images/banner.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 605px;
-  padding-top: 56px;
-  border-bottom: 1px solid #33a8db;
+.item-01 {
+  width: 50px;
+  height: 50px;
 }
-
-.banner .banner-content {
-  color: #ffffff;
-  width: 600px;
-  margin: auto;
+.item-02 {
+  width: 80px;
+  height: 80px;
+}
+.item-03 {
+  width: 40px;
+  height: 40px;
+}
+.item-04 {
+  background: orange;
+  width: 40px;
+  height: 40px;
+}
+.item-05 {
+  background: orange;
+  padding: 8px;
+  flex-grow: 1;
+}
+.item-06 {
+  background: orange;
+  width: 100px;
   text-align: center;
+  flex-grow: 1;
 }
-
-.banner .banner-content h1 {
-  font-size: 2.5rem;
-  font-weight: 900;
-  color: transparent;
-  background: -webkit-linear-gradient(#33a8db, #1472b7);
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-transform: uppercase;
+.item-grow {
+  background: orange;
+  padding: 8px;
+  flex-grow: 3;
 }
-
-.banner .banner-content p {
-  font-size: 1.25rem;
-  margin: 16px 0 24px;
+.item-shrink {
+  background: orange;
+  padding: 8px;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 1;
 }
-
-.banner .banner-content .logo {
-  background-color: rgba(0, 0, 0, 0.2);
-  height: 268px;
-  width: 268px;
-  margin: auto;
-  border-radius: 50%;
-  margin-bottom: 16px;
+.item-basis {
+  background: orange;
+  flex-basis: 150px;
+  align-self: flex-end;
 }
-
-.banner .banner-content .logo img {
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  padding: 27px 10px;
-}
-
-.banner .banner-content button {
-  color: #31a8dd;
-  font-weight: 900;
-  font-size: 1rem;
-  letter-spacing: 0.25rem;
-  padding: 16px 91px;
-  text-transform: uppercase;
-  background-color: transparent;
-  border-image: linear-gradient(#3ba1cd, #1572b7);
-  border-image-slice: 10;
-}
-
-#course-content {
-  width: 792px;
+.item-flex {
+  background: orange;
   text-align: center;
+  flex: initial; /*flex: 0 1 auto;*/
 }
 
-#course-content .modules-list {
-  margin: 24px 0;
+/* content */
+#row {
+  flex-direction: row;
+}
+#column {
+  flex-direction: column;
+}
+#row-reverse {
+  flex-direction: row-reverse;
+}
+#column-reverse {
+  flex-direction: column-reverse;
+}
+#row-wrap {
+  flex-flow: row wrap;
+}
+#column-wrap {
+  flex-flow: column wrap;
+}
+#row-nowrap {
+  flex-flow: row nowrap;
+}
+#column-nowrap {
+  flex-flow: column nowrap;
+}
+#column-wrapreverse {
+  height: 300px;
+  flex-flow: column wrap-reverse;
 }
 
-#course-content .modules-list .module span {
-  color: #33a8db;
+/*display flex */
+.inline-flex {
+  background: palegreen;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  height: 100px;
+  display: inline-flex;
+}
+.flex-direction {
+  background: palegreen;
+  padding: 20px;
+  margin: 20px;
+}
+.flex-directionreverse {
+  background: palegreen;
+  padding: 20px;
+  margin: 20px;
+}
+.flex-wrap {
+  background: palegreen;
+  padding: 20px;
+  margin: 20px;
+  height: 300px;
+  flex-wrap: wrap;
+}
+.flex-flow {
+  background: palegreen;
+  padding: 20px;
+  margin: 20px;
+}
+.flex-grow {
+  background: palegreen;
+  padding: 10px;
+  margin: 20px;
+  height: 300px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.flex-shrink {
+  background: palegreen;
+  padding: 10px;
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  gap: 10px;
+}
+.flex-basis {
+  background: palegreen;
+  padding: 10px;
+  margin: 20px;
+  height: 300px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.flex {
+  background: palegreen;
+  padding: 10px;
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
 }
 
-#course-content .modules-list .module {
-  color: #ffffff;
-  width: 535px;
-  margin: 0px auto 24px;
-  border: 1px solid #33a8db;
-  background-color: #252525;
-  padding: 16px;
-  border-radius: 100px;
-  box-shadow: inset -2px 6px 4px rgba(0, 0, 0, 0.4);
+/* justify-content */
+.justifycontent-flexstart {
+  background: palegreen;
+  margin: 20px;
+  justify-content: flex-start;
+}
+.justifycontent-flexend {
+  background: palegreen;
+  margin: 20px;
+  justify-content: flex-end;
+}
+.justifycontent-center {
+  background: palegreen;
+  margin: 20px;
+  justify-content: center;
+}
+.justifycontent-spacebetween {
+  background: palegreen;
+  margin: 20px;
+  justify-content: space-between;
+}
+.justifycontent-spacearound {
+  background: palegreen;
+  margin: 20px;
+  justify-content: space-around;
+}
+.justifycontent-spaceevenly {
+  background: palegreen;
+  margin: 20px;
+  justify-content: space-evenly;
 }
 
-#transform-world {
-  height: 363px;
-  background-size: cover;
-  background-image: url("../images/woman-code.png");
-  background-attachment: fixed;
-  border-top: 1px solid #33a8db;
-  border-bottom: 1px solid #33a8db;
-  padding: 100px 200px;
+/* alingn-itens */
+.alignitens-stretch {
+  background: palegreen;
+  margin: 20px;
+  height: 300px;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.alignitens-flexstart {
+  background: palegreen;
+  margin: 20px;
+  height: 300px;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.alignitens-flexend {
+  background: palegreen;
+  margin: 20px;
+  height: 300px;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.alignitens-center {
+  background: palegreen;
+  margin: 20px;
+  height: 300px;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-#transform-world p {
-  color: #ffffff;
-  font-weight: 900;
-  font-size: 2.5rem;
-  text-transform: lowercase;
-  text-shadow: 3px 2px #33a8db;
-  max-width: 244px;
+/* align-content */
+.aligncontent-normal {
+  background: palegreen;
+  padding: 10px;
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: normal;
+}
+.aligncontent-flexstart {
+  background: palegreen;
+  padding: 10px;
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.aligncontent-flexend {
+  background: palegreen;
+  padding: 10px;
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-end;
+}
+.aligncontent-center {
+  background: palegreen;
+  padding: 10px;
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: center;
+}
+.aligncontent-spacebetween {
+  background: palegreen;
+  padding: 10px;
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: space-between;
+}
+.aligncontent-spacearound {
+  background: palegreen;
+  padding: 10px;
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: space-around;
 }
 
-#professional-challenges {
-  width: 792px;
-  text-align: center;
+/* order */
+.order-04 {
+  order: -1;
 }
-
-#professional-challenges img {
-  margin-top: 32px;
+.order-09 {
+  order: -1;
 }
-
-#professional-challenges p {
-  margin-top: 40px;
+.order-10 {
+  order: -2;
 }
-
-footer {
-  padding: 60px 0;
-  text-align: center;
-  background-image: linear-gradient(
-    rgba(50, 168, 219, 0),
-    rgba(50, 168, 219, 0.2)
-  );
-  border-top: 1px solid #33a8db;
-}
-
-footer .dio-logo {
-  width: 310px;
-}
-
-footer a {
-  color: #33a8db;
-  font-weight: 700;
-  text-decoration: none;
+.order-05 {
+  order: 1;
 }
