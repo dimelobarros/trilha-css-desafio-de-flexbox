@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/estudo.css" />
+    <title>Trilha de CSS - DIO</title>
+  </head>
+  <body>
+    <h3>inline-flex</h3>
+    <div class="inline-flex">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+      <div class="item">Item 05</div>
+    </div>
+    <div class="inline-flex">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+      <div class="item">Item 05</div>
+    </div>
+
+    <h3>flex-direction</h3>
+    <div class="container flex-direction" id="row">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+      <div class="item">Item 05</div>
+    </div>
+    <div class="container flex-direction" id="column">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+      <div class="item">Item 05</div>
+    </div>
+
+    <h3>flex-direction-reverse</h3>
+    <div class="container flex-directionreverse" id="row-reverse">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+      <div class="item">Item 05</div>
+    </div>
+    <div class="container flex-directionreverse" id="column-reverse">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+      <div class="item">Item 05</div>
+    </div>
+
+    <h3>flex-wrap</h3>
+    <div class="container flex-wrap" id="row">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+      <div class="item">Item 05</div>
+      <div class="item">Item 06</div>
+      <div class="item">Item 07</div>
+      <div class="item">Item 08</div>
+      <div class="item">Item 09</div>
+      <div class="item">Item 10</div>
+    </div>
+    <div class="container flex-wrap" id="column">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+      <div class="item">Item 05</div>
+      <div class="item">Item 06</div>
+      <div class="item">Item 07</div>
+      <div class="item">Item 08</div>
+      <div class="item">Item 09</div>
+      <div class="item">Item 10</div>
+    </div>
+
+    <h3>flex-flow</h3>
+    <div class="container flex-flow" id="row-wrap">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+      <div class="item">Item 05</div>
+      <div class="item">Item 06</div>
+      <div class="item">Item 07</div>
+      <div class="item">Item 08</div>
+      <div class="item">Item 09</div>
+      <div class="item">Item 10</div>
+    </div>
+    <div class="container flex-flow" id="column-wrapreverse">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+      <div class="item">Item 05</div>
+      <div class="item">Item 06</div>
+      <div class="item">Item 07</div>
+      <div class="item">Item 08</div>
+      <div class="item">Item 09</div>
+      <div class="item">Item 10</div>
+    </div>
+
+    <h3>justify-content - flex-start</h3>
+    <div class="container justifycontent-flexstart" id="row-wrap">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+    </div>
+    <div class="container justifycontent-flexstart" id="column-wrapreverse">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+    </div>
+
+    <h3>justify-content - flex-end</h3>
+    <div class="container justifycontent-flexend" id="row-wrap">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+    </div>
+    <div class="container justifycontent-flexend" id="column-wrapreverse">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+    </div>
+
+    <h3>justify-content - center</h3>
+    <div class="container justifycontent-center" id="row-wrap">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+    </div>
+    <div class="container justifycontent-center" id="column-wrapreverse">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+    </div>
+
+    <h3>justify-content - space-between</h3>
+    <div class="container justifycontent-spacebetween" id="row-wrap">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+    </div>
+    <div class="container justifycontent-spacebetween" id="column-wrapreverse">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+    </div>
+
+    <h3>justify-content - space-around</h3>
+    <div class="container justifycontent-spacearound" id="row-wrap">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+    </div>
+    <div class="container justifycontent-spacearound" id="column-wrapreverse">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+    </div>
+
+    <h3>justify-content - space-evenly</h3>
+    <div class="container justifycontent-spaceevenly" id="row-wrap">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+    </div>
+    <div class="container justifycontent-spaceevenly" id="column-wrapreverse">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+    </div>
+
+    <h3>align-itens - stretch</h3>
+    <div class="container alignitens-stretch" id="row">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+    </div>
+    <div class="container alignitens-stretch" id="column">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+    </div>
+
+    <h3>align-itens - flex-start</h3>
+    <div class="container alignitens-flexstart" id="row">
+      <div class="item item-01">Item 01</div>
+      <div class="item item-02">Item 02</div>
+      <div class="item item-03">Item 03</div>
+    </div>
+    <div class="container alignitens-flexstart" id="column">
+      <div class="item item-01">Item 01</div>
+      <div class="item item-02">Item 02</div>
+      <div class="item item-03">Item 03</div>
+    </div>
+
+    <h3>align-itens - flex-end</h3>
+    <div class="container alignitens-flexend" id="row">
+      <div class="item item-01">Item 01</div>
+      <div class="item item-02">Item 02</div>
+      <div class="item item-03">Item 03</div>
+    </div>
+    <div class="container alignitens-flexend" id="column">
+      <div class="item item-01">Item 01</div>
+      <div class="item item-02">Item 02</div>
+      <div class="item item-03">Item 03</div>
+    </div>
+
+    <h3>align-itens - center</h3>
+    <div class="container alignitens-center" id="row">
+      <div class="item item-01">Item 01</div>
+      <div class="item item-02">Item 02</div>
+      <div class="item item-03">Item 03</div>
+    </div>
+    <div class="container alignitens-center" id="column">
+      <div class="item item-01">Item 01</div>
+      <div class="item item-02">Item 02</div>
+      <div class="item item-03">Item 03</div>
+    </div>
+
+    <h3>align-content - normal</h3>
+    <div class="container aligncontent-normal" id="row-wrap">
+      <div class="item-04">Item 01</div>
+      <div class="item-04">Item 02</div>
+      <div class="item-04">Item 03</div>
+      <div class="item-04">Item 04</div>
+      <div class="item-04">Item 05</div>
+      <div class="item-04">Item 06</div>
+      <div class="item-04">Item 07</div>
+      <div class="item-04">Item 08</div>
+      <div class="item-04">Item 09</div>
+      <div class="item-04">Item 10</div>
+    </div>
+    <div class="container aligncontent-normal" id="column-wrap">
+      <div class="item-04">Item 01</div>
+      <div class="item-04">Item 02</div>
+      <div class="item-04">Item 03</div>
+      <div class="item-04">Item 04</div>
+      <div class="item-04">Item 05</div>
+      <div class="item-04">Item 06</div>
+      <div class="item-04">Item 07</div>
+      <div class="item-04">Item 08</div>
+      <div class="item-04">Item 09</div>
+      <div class="item-04">Item 10</div>
+    </div>
+
+    <h3>align-content - flex-start</h3>
+    <div class="container aligncontent-flexstart" id="row-wrap">
+      <div class="item-04">Item 01</div>
+      <div class="item-04">Item 02</div>
+      <div class="item-04">Item 03</div>
+      <div class="item-04">Item 04</div>
+      <div class="item-04">Item 05</div>
+      <div class="item-04">Item 06</div>
+      <div class="item-04">Item 07</div>
+      <div class="item-04">Item 08</div>
+      <div class="item-04">Item 09</div>
+      <div class="item-04">Item 10</div>
+    </div>
+    <div class="container aligncontent-flexstart" id="column-wrap">
+      <div class="item-04">Item 01</div>
+      <div class="item-04">Item 02</div>
+      <div class="item-04">Item 03</div>
+      <div class="item-04">Item 04</div>
+      <div class="item-04">Item 05</div>
+      <div class="item-04">Item 06</div>
+      <div class="item-04">Item 07</div>
+      <div class="item-04">Item 08</div>
+      <div class="item-04">Item 09</div>
+      <div class="item-04">Item 10</div>
+    </div>
+
+    <h3>align-content - flex-end</h3>
+    <div class="container aligncontent-flexend" id="row-wrap">
+      <div class="item-04">Item 01</div>
+      <div class="item-04">Item 02</div>
+      <div class="item-04">Item 03</div>
+      <div class="item-04">Item 04</div>
+      <div class="item-04">Item 05</div>
+      <div class="item-04">Item 06</div>
+      <div class="item-04">Item 07</div>
+      <div class="item-04">Item 08</div>
+      <div class="item-04">Item 09</div>
+      <div class="item-04">Item 10</div>
+    </div>
+    <div class="container aligncontent-flexend" id="column-wrap">
+      <div class="item-04">Item 01</div>
+      <div class="item-04">Item 02</div>
+      <div class="item-04">Item 03</div>
+      <div class="item-04">Item 04</div>
+      <div class="item-04">Item 05</div>
+      <div class="item-04">Item 06</div>
+      <div class="item-04">Item 07</div>
+      <div class="item-04">Item 08</div>
+      <div class="item-04">Item 09</div>
+      <div class="item-04">Item 10</div>
+    </div>
+
+    <h3>align-content - center</h3>
+    <div class="container aligncontent-center" id="row-wrap">
+      <div class="item-04">Item 01</div>
+      <div class="item-04">Item 02</div>
+      <div class="item-04">Item 03</div>
+      <div class="item-04">Item 04</div>
+      <div class="item-04">Item 05</div>
+      <div class="item-04">Item 06</div>
+      <div class="item-04">Item 07</div>
+      <div class="item-04">Item 08</div>
+      <div class="item-04">Item 09</div>
+      <div class="item-04">Item 10</div>
+    </div>
+    <div class="container aligncontent-center" id="column-wrap">
+      <div class="item-04">Item 01</div>
+      <div class="item-04">Item 02</div>
+      <div class="item-04">Item 03</div>
+      <div class="item-04">Item 04</div>
+      <div class="item-04">Item 05</div>
+      <div class="item-04">Item 06</div>
+      <div class="item-04">Item 07</div>
+      <div class="item-04">Item 08</div>
+      <div class="item-04">Item 09</div>
+      <div class="item-04">Item 10</div>
+    </div>
+
+    <h3>align-content - space-between</h3>
+    <div class="container aligncontent-spacebetween" id="row-wrap">
+      <div class="item-04">Item 01</div>
+      <div class="item-04">Item 02</div>
+      <div class="item-04">Item 03</div>
+      <div class="item-04">Item 04</div>
+      <div class="item-04">Item 05</div>
+      <div class="item-04">Item 06</div>
+      <div class="item-04">Item 07</div>
+      <div class="item-04">Item 08</div>
+      <div class="item-04">Item 09</div>
+      <div class="item-04">Item 10</div>
+    </div>
+    <div class="container aligncontent-spacebetween" id="column-wrap">
+      <div class="item-04">Item 01</div>
+      <div class="item-04">Item 02</div>
+      <div class="item-04">Item 03</div>
+      <div class="item-04">Item 04</div>
+      <div class="item-04">Item 05</div>
+      <div class="item-04">Item 06</div>
+      <div class="item-04">Item 07</div>
+      <div class="item-04">Item 08</div>
+      <div class="item-04">Item 09</div>
+      <div class="item-04">Item 10</div>
+    </div>
+
+    <h3>align-content - space-around</h3>
+    <div class="container aligncontent-spacearound" id="row-wrap">
+      <div class="item-04">Item 01</div>
+      <div class="item-04">Item 02</div>
+      <div class="item-04">Item 03</div>
+      <div class="item-04">Item 04</div>
+      <div class="item-04">Item 05</div>
+      <div class="item-04">Item 06</div>
+      <div class="item-04">Item 07</div>
+      <div class="item-04">Item 08</div>
+      <div class="item-04">Item 09</div>
+      <div class="item-04">Item 10</div>
+    </div>
+    <div class="container aligncontent-spacearound" id="column-wrap">
+      <div class="item-04">Item 01</div>
+      <div class="item-04">Item 02</div>
+      <div class="item-04">Item 03</div>
+      <div class="item-04">Item 04</div>
+      <div class="item-04">Item 05</div>
+      <div class="item-04">Item 06</div>
+      <div class="item-04">Item 07</div>
+      <div class="item-04">Item 08</div>
+      <div class="item-04">Item 09</div>
+      <div class="item-04">Item 10</div>
+    </div>
+
+    <h3>order</h3>
+    <div class="container flex-flow" id="row-wrap">
+      <div class="item order-01">Item 01</div>
+      <div class="item order-02">Item 02</div>
+      <div class="item order-03">Item 03</div>
+      <div class="item order-04">Item 04</div>
+      <div class="item order-05">Item 05</div>
+      <div class="item order-06">Item 06</div>
+      <div class="item order-07">Item 07</div>
+      <div class="item order-08">Item 08</div>
+      <div class="item order-09">Item 09</div>
+      <div class="item order-10">Item 10</div>
+    </div>
+    <div class="container flex-flow" id="column-wrap">
+      <div class="item order-01">Item 01</div>
+      <div class="item order-02">Item 02</div>
+      <div class="item order-03">Item 03</div>
+      <div class="item order-04">Item 04</div>
+      <div class="item order-05">Item 05</div>
+      <div class="item order-06">Item 06</div>
+      <div class="item order-07">Item 07</div>
+      <div class="item order-08">Item 08</div>
+      <div class="item order-09">Item 09</div>
+      <div class="item order-10">Item 10</div>
+    </div>
+
+    <h3>flex-grow</h3>
+    <div class="flex-grow">
+      <div class="item-05">Item 01</div>
+      <div class="item-grow">Item 02</div>
+      <div class="item-05">Item 03</div>
+    </div>
+    <div class="flex-grow">
+      <div class="item-05">DIO</div>
+      <div class="item-grow">Bem-vindo</div>
+      <div class="item-05">Trilha de CSS</div>
+    </div>
+
+    <h3>flex-shrink</h3>
+    <div class="flex-shrink" id="row-nowrap">
+      <div class="item-shrink">01</div>
+      <div class="item-shrink">02</div>
+      <div class="item-shrink">03</div>
+      <div class="item-shrink">04</div>
+      <div class="item-shrink">05</div>
+      <div class="item-shrink">06</div>
+    </div>
+    <div class="flex-shrink" id="column-nowrap">
+      <div class="item-shrink">01</div>
+      <div class="item-shrink">02</div>
+      <div class="item-shrink">03</div>
+      <div class="item-shrink">04</div>
+      <div class="item-shrink">05</div>
+      <div class="item-shrink">06</div>
+    </div>
+
+    <h3>flex-basis</h3>
+    <div class="flex-basis" id="row">
+      <div class="item-06">Item 01</div>
+      <div class="item-06 item-basis">Item 02</div>
+      <div class="item-06">Item 03</div>
+    </div>
+    <div class="flex-basis" id="row">
+      <div class="item-06">Curto</div>
+      <div class="item-06 item-basis">Texto médio</div>
+      <div class="item-06">Meu texto muito longo</div>
+    </div>
+
+    <h3>flex</h3>
+    <div class="flex" id="column">
+      <div class="item-flex">Item 01</div>
+      <div class="item-flex">Item 02</div>
+      <div class="item-flex">Item 03</div>
+    </div>
+    <div class="flex" id="row">
+      <div class="item-flex">Curto</div>
+      <div class="item-flex">Texto médio</div>
+      <div class="item-flex">Meu texto muito longo</div>
+    </div>
+  </body>
+</html>
