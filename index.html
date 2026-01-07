@@ -7,54 +7,225 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Trilha de CSS - DIO</title>
   </head>
+
   <body>
-    <header class="navbar">
-      <div class="navbar-content">
-        <div class="start">
-          <div class="menu">
-            <img src="./assets/images/menu.png" alt="" />
+    <div class="app">
+      <header class="navbar">
+        <div class="navbar-content" id="flex-row-center">
+          <div class="navbar-content-start" id="flex-row-center">
+            <div class="navbar-content-start-menu" id="flex-row-center">
+              <img src="./assets/images/menu.png" alt="" />
+            </div>
+            <div class="navbar-content-start-logo" id="flex-row-center">
+              <img src="./assets/images/logo.png" alt="" />
+            </div>
+            <div class="navbar-content-start-span">
+              <span>BR</span>
+            </div>
           </div>
-          <div class="logo">
-            <img src="./assets/images/logo.png" alt="" />
-          </div>
-          <div class="span">
-            <span>BR</span>
-          </div>
-        </div>
-        <div class="center">
-          <div class="searchbox">
-            <div class="searchbox-imput">
-              <form action="">
-                <input type="text" placeholder="Pesquisar" />
-              </form>
-              <div class="teclado">
-                <img src="./assets/images/tia.png" alt="" />
+          <div class="navbar-content-center" id="flex-row-center">
+            <div class="navbar-content-center-searchbox" id="flex-row">
+              <div class="navbar-content-center-searchbox-imput" id="flex-row-center">
+                <form action="">
+                  <input type="text" placeholder="Pesquisar" />
+                </form>
+                <div class="navbar-content-center-searchbox-imput-teclado">
+                  <img src="./assets/images/tia.png" alt="" />
+                </div>
+              </div>
+              <div class="navbar-content-center-searchbox-imput-button" id="flex-row-center">
+                <img src="./assets/images/search.png" alt="" />
+              </div>
+              <div class="navbar-content-center-searchbox-imput-feedback" id="flex-row-center">
+                <img src="./assets/images/feedback.png" alt="" />
               </div>
             </div>
-            <div class="search-button">
-              <img src="./assets/images/search.png" alt="" />
-            </div>
-            <div class="feedback">
-              <img src="./assets/images/feedback.png" alt="" />
+          </div>
+          <div class="navbar-content-end" id="flex-row-center">
+            <div class="navbar-content-end-buttons" id="flex-row-center">
+              <div class="navbar-content-end-buttons-upload" id="flex-row-center">
+                <img src="./assets/images/upload.png" alt="" />
+              </div>
+              <div class="navbar-content-end-buttons-notification" id="flex-row-center">
+                <img src="./assets/images/notification.png" alt="" />
+              </div>
+              <div class="navbar-content-end-buttons-profile" id="flex-row-center">
+                <img src="./assets/images/profile.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
-        <div class="end">
-          <div class="end-buttons">
-            <div class="upload">
-              <img src="./assets/images/upload.png" alt="" />
+      </header>
+      <main class="page">
+        <div class="columns" id="flex-start-row">
+          <div class="primary" id="flex-column-center">
+            <div class="primary-player" id="flex-row-center">
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/O1-JbLBf7L0?si=ZBO5s6k13TKypcAa"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </div>
-            <div class="notification">
-              <img src="./assets/images/notification.png" alt="" />
+            <div class="primary-below" id="row-wrap-center">
+              <div class="primary-below-above" id="flex-column-center">
+                <div class="primary-below-above-top-row" id="flex-start-row">
+                  <h1>Productivity Music – Deep Focus Chillstep Mix for Work & Study Sessions</h1>
+                </div>
+                <div class="primary-below-above-middle-row" id="flex-row-center">
+                  <div class="primary-below-above-middle-row-content" id="flex-row-center">
+                    <div class="primary-below-above-middle-row-content-profile" id="flex-row-center">
+                      <img src="./assets/images/profile.png" alt="" />
+                    </div>
+                    <div class="primary-below-above-middle-row-content-text" id="flex-start-column">
+                      <h1>Chill Guide</h1>
+                      <h2>24,2 mil inscritos</h2>
+                    </div>
+                    <div class="primary-below-above-middle-row-content-subscribe" id="flex-row-center">
+                      <div class="primary-below-above-middle-row-content-subscribe-button" id="flex-row-center">
+                        <p>Inscrever-se</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="primary-below-above-middle-row-actions" id="flex-row-center">
+                    <div class="primary-below-above-middle-row-actions-like-dislike" id="flex-row-center">
+                      <div class="primary-below-above-middle-row-actions-like-dislike-like" id="flex-row-center">
+                        <img src="./assets/images/like.png" alt="" />
+                        <p>4,5 mil</p>
+                      </div>
+                      <div class="primary-below-above-middle-row-actions-like-dislike-dislike" id="flex-row-center">
+                        <img src="./assets/images/dislike.png" alt="" />
+                      </div>
+                    </div>
+                    <div class="primary-below-above-middle-row-actions-share" id="flex-row-center">
+                      <div class="primary-below-above-middle-row-actions-share-button" id="flex-row-center">
+                        <img src="./assets/images/share.png" alt="" />
+                        <p>Compartilhar</p>
+                      </div>
+                    </div>
+                    <div class="primary-below-above-middle-row-actions-save" id="flex-row-center">
+                      <div class="primary-below-above-middle-row-actions-save-button" id="flex-row-center">
+                        <img src="./assets/images/save.png" alt="" />
+                        <p>Salvar</p>
+                      </div>
+                    </div>
+                    <div class="primary-below-above-middle-row-actions-menu" id="flex-row-center">
+                      <div class="primary-below-above-middle-row-actions-menu-button" id="flex-row-center">
+                        <img src="./assets/images/menudots.png" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="bottom-row"></div>
+              </div>
             </div>
-            <div class="profile">
-              <img src="./assets/images/profile.png" alt="" />
+          </div>
+          <div class="secondary" id="flex-column-center">
+            <div class="secondary-content" id="flex-column-center">
+              <div class="secondary-content-top-row" id="flex-start-column">
+                <div class="secondary-content-top-row-header" id="flex-column-center">
+                  <div class="secondary-content-top-row-header-title" id="flex-row-center">
+                    <div class="secondary-content-top-row-header-title-text" id="flex-row-center">
+                      <h1>Mix de Productivity Music – Deep</h1>
+                      <h2>Mixes are playlists YouTube makes for you</h2>
+                    </div>
+                    <div class="secondary-content-top-row-header-title-button" id="flex-row-center">
+                      <img src="./assets/images/close.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="secondary-content-top-row-header-action" id="flex-end-row">
+                    <div class="secondary-content-top-row-header-action-button" id="flex-row-center">
+                      <img src="./assets/images/verticaldots.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="secondary-content-top-row-playlist" id="flex-column-center">
+                  <div class="secondary-content-top-row-playlist-itens" id="flex-row-center">
+                    <div class="secondary-content-top-row-playlist-itens-play" id="flex-column-center">
+                      <p>▶</p>
+                    </div>
+                    <div class="secondary-content-top-row-playlist-itens-image" id="flex-row-center">
+                      <div class="secondary-content-top-row-playlist-itens-image-time" id="flex-row-center">
+                        <p>3:04:17</p>
+                      </div>
+                    </div>
+                    <div class="secondary-content-top-row-playlist-itens-text" id="row-wrap-center">
+                      <h1>Productivity Music – Deep</h1>
+                      <h1>Focus Chillstep Mix for Work</h1>
+                      <h2>Chill Guide</h2>
+                    </div>
+                  </div>
+                  <div class="secondary-content-top-row-playlist-itens" id="flex-row-center">
+                    <div class="secondary-content-top-row-playlist-itens-play" id="flex-column-center">
+                      <p>▶</p>
+                    </div>
+                    <div class="secondary-content-top-row-playlist-itens-image" id="flex-row-center">
+                      <div class="secondary-content-top-row-playlist-itens-image-time" id="flex-row-center">
+                        <p>3:04:17</p>
+                      </div>
+                    </div>
+                    <div class="secondary-content-top-row-playlist-itens-text" id="row-wrap-center">
+                      <h1>Productivity Music – Deep</h1>
+                      <h1>Focus Chillstep Mix for Work</h1>
+                      <h2>Chill Guide</h2>
+                    </div>
+                  </div>
+                  <div class="secondary-content-top-row-playlist-itens" id="flex-row-center">
+                    <div class="secondary-content-top-row-playlist-itens-play" id="flex-column-center">
+                      <p>▶</p>
+                    </div>
+                    <div class="secondary-content-top-row-playlist-itens-image" id="flex-row-center">
+                      <div class="secondary-content-top-row-playlist-itens-image-time" id="flex-row-center">
+                        <p>3:04:17</p>
+                      </div>
+                    </div>
+                    <div class="secondary-content-top-row-playlist-itens-text" id="row-wrap-center">
+                      <h1>Productivity Music – Deep</h1>
+                      <h1>Focus Chillstep Mix for Work</h1>
+                      <h2>Chill Guide</h2>
+                    </div>
+                  </div>
+                  <div class="secondary-content-top-row-playlist-itens" id="flex-row-center">
+                    <div class="secondary-content-top-row-playlist-itens-play" id="flex-column-center">
+                      <p>▶</p>
+                    </div>
+                    <div class="secondary-content-top-row-playlist-itens-image" id="flex-row-center">
+                      <div class="secondary-content-top-row-playlist-itens-image-time" id="flex-row-center">
+                        <p>3:04:17</p>
+                      </div>
+                    </div>
+                    <div class="secondary-content-top-row-playlist-itens-text" id="row-wrap-center">
+                      <h1>Productivity Music – Deep</h1>
+                      <h1>Focus Chillstep Mix for Work</h1>
+                      <h2>Chill Guide</h2>
+                    </div>
+                  </div>
+                  <div class="secondary-content-top-row-playlist-itens" id="flex-row-center">
+                    <div class="secondary-content-top-row-playlist-itens-play" id="flex-column-center">
+                      <p>▶</p>
+                    </div>
+                    <div class="secondary-content-top-row-playlist-itens-image" id="flex-row-center">
+                      <div class="secondary-content-top-row-playlist-itens-image-time" id="flex-row-center">
+                        <p>3:04:17</p>
+                      </div>
+                    </div>
+                    <div class="secondary-content-top-row-playlist-itens-text" id="row-wrap-center">
+                      <h1>Productivity Music – Deep</h1>
+                      <h1>Focus Chillstep Mix for Work</h1>
+                      <h2>Chill Guide</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </header>
-    <main></main>
-    <footer></footer>
+      </main>
+      <footer></footer>
+    </div>
   </body>
 </html>
